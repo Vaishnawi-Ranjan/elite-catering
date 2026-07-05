@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Elite Catering</h2>
+
+<ul>
+
+<li class="active">
+<i class="fa fa-house"></i>
+Dashboard
+</li>
+
+
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>Admin Dashboard</h1>
+
+</div>
+
+<div class="cards">
+
+<div class="card orange">
+
+<h2 id="totalBookings">0</h2>
+
+<p>Total Bookings</p>
+
+</div>
+
+<div class="card blue">
+
+<h2 id="todayBookings">0</h2>
+<p>Today's Bookings</p>
+
+</div>
+
+<div class="card green">
+
+<h2 id="completedBookings">0</h2>
+<p>Completed</p>
+
+</div>
+
+<div class="card red">
+
+<h2 id="pendingBookings">0</h2>
+<p>Pending</p>
+
+</div>
+
+</div>
+
+<div class="table-box">
+
+<h2>Recent Bookings</h2>
+<input
+type="text"
+id="searchBox"
+placeholder="Search Booking..."
+onkeyup="searchBooking()">
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Phone</th>
+
+<th>Event</th>
+
+<th>Date</th>
+
+<th>People</th>
+<th>Status</th>
+
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="bookingTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
